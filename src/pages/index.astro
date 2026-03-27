@@ -4,7 +4,7 @@ import Container from "@components/Container.astro";
 import PageLayout from "@layouts/PageLayout.astro";
 import ArrowCard from "@components/ArrowCard.astro";
 import Link from "@components/Link.astro";
-import { dateRange } from "@lib/utils";
+// import { dateRange } from "@lib/utils";
 import { SITE, HOME, SOCIALS } from "@consts";
 
 const blog = (await getCollection("blog"))
@@ -28,9 +28,7 @@ const projects = (await getCollection("projects"))
       <section>
         <article class="space-y-4">
           <p class="animate">
-            Meu nome é Ilan, sou desenvolvedor de software.
-            Trabalho com tecnologias como TypeScript, React, Next.js, NestJS, Java e Spring,
-            além de diversas outras ferramentas e frameworks do ecossistema web e mobile.
+            Meu nome é Ilan, sou desenvolvedor de software especializado em aplicações web modernas. Trabalho com TypeScript, React, Next.js e NestJS na construção de interfaces performáticas e APIs escaláveis, além de experiência com Java e Spring no desenvolvimento de sistemas backend robustos.
           </p>
           <p class="animate">
             Aqui você encontra meus projetos, experiências profissionais e artigos
