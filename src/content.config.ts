@@ -1,5 +1,5 @@
 import { defineCollection } from "astro:content";
-import { z } from "astro:schema";
+import { z } from "astro/zod";
 import { glob } from "astro/loaders";
 
 const blog = defineCollection({
@@ -8,7 +8,7 @@ const blog = defineCollection({
     title: z.string(),
     description: z.string(),
     date: z.coerce.date(),
-    draft: z.boolean().optional()
+    draft: z.boolean().optional(),
   }),
 });
 
@@ -32,10 +32,14 @@ const projects = defineCollection({
     demoURL: z.string().optional(),
     repoURL: z.string().optional(),
     tags: z.array(z.string()).optional(),
-    images: z.array(z.object({
-      src: z.string(),
-      alt: z.string(),
-    })).optional()
+    images: z
+      .array(
+        z.object({
+          src: z.string(),
+          alt: z.string(),
+        }),
+      )
+      .optional(),
   }),
 });
 
