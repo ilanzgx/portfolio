@@ -6,9 +6,13 @@ repoURL: "https://github.com/ilanzgx/toPrecisando-mobile"
 tags: ["React Native", "Expo", "TypeScript", "Supabase"]
 ---
 
+## 🧠 Sobre
+
 O **Tô Precisando** é um aplicativo mobile criado para conectar pessoas que precisam de um serviço com profissionais que o oferecem. Funciona como um "Uber dos serviços": seja um eletricista, encanador ou professor particular, a plataforma permite a publicação de "vagas" detalhadas e o gerenciamento de candidaturas.
 
-## 🚀 Tecnologias e Stack
+---
+
+## ⚙️ Tecnologias
 
 - **Framework Mobile:** Expo SDK 53 (React Native)
 - **Linguagem:** TypeScript 5.8
@@ -19,15 +23,48 @@ O **Tô Precisando** é um aplicativo mobile criado para conectar pessoas que pr
 - **Formulários:** React Hook Form + Zod
 - **Testes:** Jest + Testing Library
 
-## 💻 Sobre o Projeto e Funcionalidades
+---
 
-A aplicação possui um escopo funcional amplo, oferecendo uma experiência segura, dinâmica e completa para os usuários, contando com:
+## 📸 Imagens
 
-- **Autenticação Segura:** Login via e-mail/senha, Google e Facebook via Supabase.
-- **Gestão de Vagas e Candidaturas:** Controle total para criar vagas e aplicar para serviços.
-- **Busca Inteligente:** Motor de busca integrado com filtros por categoria, localização e palavras-chave.
-- **Chat e Mensageria em Tempo Real:** Comunicação instantânea entre contratantes e prestadores, com notificações.
-- **Identidade Visual Dinâmica:** Suporte completo a Dark Mode (tema claro, escuro e sistema).
-- **Cobertura de Testes:** Arquitetura focada em confiabilidade, com testes unitários e de integração (Jest).
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 not-prose my-6">
+  <img src="/images/projects/toprecisando/image_1.jpeg" alt="Dashboard principal Zuno" class="w-full h-full object-cover rounded-lg border border-black/10 dark:border-white/10 !m-0" data-zoomable />
+  <img src="/images/projects/toprecisando/image_2.jpeg" alt="Visualização da carteira 1" class="w-full h-full object-cover rounded-lg border border-black/10 dark:border-white/10 !m-0" data-zoomable />
+  <img src="/images/projects/toprecisando/image_3.jpeg" alt="Visualização comparador de carteira 2" class="w-full h-full object-cover rounded-lg border border-black/10 dark:border-white/10 !m-0" data-zoomable />
+  <img src="/images/projects/toprecisando/image_4.jpeg" alt="Visualização comparador de carteira 2" class="w-full h-full object-cover rounded-lg border border-black/10 dark:border-white/10 !m-0" data-zoomable />
+</div>
 
-O app também está preparado para deploys "Over-The-Air" (OTA Updates) através do ecossistema do Expo, garantindo atualizações instantâneas para os usuários em produção.
+---
+
+## ▶️ Como rodar
+
+```bash
+git clone https://github.com/ilanzgx/toPrecisando-mobile.git
+cd toPrecisando-mobile
+npm install
+npx expo start
+```
+
+---
+
+## ✨ Funcionalidades
+
+- **Autenticação Segura:** Login via e-mail/senha, Google e Facebook via Supabase
+- **Gestão de Vagas e Candidaturas:** Controle total para criar vagas e aplicar para serviços
+- **Busca Inteligente:** Motor de busca com filtros por categoria, localização e palavras-chave
+- **Chat em Tempo Real:** Comunicação instantânea entre contratantes e prestadores com notificações
+- **Dark Mode:** Suporte completo a tema claro, escuro e sistema
+- **OTA Updates:** Atualizações instantâneas via ecossistema Expo
+
+---
+
+## 📌 Status
+
+🟡 Em andamento
+
+---
+
+## 👤 Autor
+
+Ilan Fonseca
+[github.com/ilanzgx](https://github.com/ilanzgx)

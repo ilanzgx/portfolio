@@ -4,6 +4,7 @@ import PageLayout from "@layouts/PageLayout.astro";
 import Container from "@components/Container.astro";
 import FormattedDate from "@components/FormattedDate.astro";
 import { readingTime } from "@lib/utils";
+import { getTagIconPath } from "@lib/icons";
 import BackToPrev from "@components/BackToPrev.astro";
 import Link from "@components/Link.astro";
 
@@ -20,48 +21,99 @@ type Props = CollectionEntry<"projects">;
 
 const project = Astro.props;
 const { Content } = await render(project);
+const { title, description, date, tags, demoURL, repoURL, images } = project.data;
 ---
 
-<PageLayout title={project.data.title} description={project.data.description}>
+<PageLayout title={title} description={description}>
   <Container>
     <div class="animate">
       <BackToPrev href="/projetos">
         Voltar para os projetos
       </BackToPrev>
     </div>
-    <div class="space-y-1 my-10">
-      <div class="animate flex items-center gap-1.5">
-        <div class="font-base text-sm">
-          <FormattedDate date={project.data.date} />
-        </div>
-        &bull;
-        <div class="font-base text-sm">
-          {readingTime(project.body ?? "")}
-        </div>
-      </div>
+
+    <!-- Header -->
+    <div class="space-y-4 my-10">
       <div class="animate text-2xl font-semibold text-black dark:text-white">
-        {project.data.title}
+        {title}
       </div>
-      {(project.data.demoURL || project.data.repoURL) && (
-        <nav class="animate flex gap-1">
-          {project.data.demoURL && (
-            <Link href={project.data.demoURL} external>
-              demo
-            </Link>
-          )}
-          {project.data.demoURL && project.data.repoURL && (
-            <span>/</span>
-          )}
-          {project.data.repoURL && (
-            <Link href={project.data.repoURL} external>
-              repo
-            </Link>
-          )}
-        </nav>
+      <p class="animate text-sm">{description}</p>
+
+      <!-- Metadata row -->
+      <div class="animate flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
+        <FormattedDate date={date} />
+        &bull;
+        <span>{readingTime(project.body ?? "")}</span>
+        {(demoURL || repoURL) && (
+          <>
+            &bull;
+            <nav class="flex gap-1">
+              {demoURL && (
+                <Link href={demoURL} external>
+                  demo
+                </Link>
+              )}
+              {demoURL && repoURL && <span>/</span>}
+              {repoURL && (
+                <Link href={repoURL} external>
+                  repositório
+                </Link>
+              )}
+            </nav>
+          </>
+        )}
+      </div>
+
+      <!-- Tags -->
+      {tags && tags.length > 0 && (
+        <ul class="animate flex flex-wrap gap-1.5">
+          {tags.map((tag) => {
+            const iconPath = getTagIconPath(tag);
+            return (
+              <li class="inline-flex items-center gap-1 text-xs rounded-full px-2.5 py-1 border border-black/10 dark:border-white/15 text-black/50 dark:text-white/60">
+                {iconPath && (
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="size-3 fill-current shrink-0">
+                    <path d={iconPath} />
+                  </svg>
+                )}
+                {tag}
+              </li>
+            );
+          })}
+        </ul>
       )}
     </div>
+
+    <!-- Images gallery -->
+    {images && images.length > 0 && (
+      <div class="animate space-y-4 mb-10">
+        {images.map((image) => (
+          <figure class="overflow-hidden rounded-lg border border-black/10 dark:border-white/10">
+            <img
+              src={image.src}
+              alt={image.alt}
+              class="w-full object-cover"
+              loading="lazy"
+              decoding="async"
+              data-zoomable
+            />
+          </figure>
+        ))}
+      </div>
+    )}
+
+    <!-- Content -->
     <article class="animate">
       <Content />
     </article>
   </Container>
+
+  <script>
+    import mediumZoom from "medium-zoom";
+
+    mediumZoom("article img, [data-zoomable]", {
+      margin: 24,
+      background: "rgba(0, 0, 0, 0.85)",
+    });
+  </script>
 </PageLayout>
