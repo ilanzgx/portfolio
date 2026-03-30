@@ -3,6 +3,7 @@ title: "Ecommerce Laravel"
 description: "Uma loja virtual moderna e completa construída com Laravel 8, Inertia.js e Vue.js."
 date: "2022-01-15"
 repoURL: "https://github.com/ilanzgx/ecommerce-laravel"
+tags: ["Laravel", "PHP", "Vue.js", "Inertia.js", "MySQL"]
 ---
 
 Uma loja virtual completa projetada para entregar uma experiência de navegação rápida (SPA) utilizando a força do PHP com o ecossistema reativo do Vue.

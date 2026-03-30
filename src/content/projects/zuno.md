@@ -3,6 +3,7 @@ title: "Zuno - Consolidador de Investimentos"
 description: "Plataforma financeira projetada para centralizar e gerenciar investimentos com visão em tempo real, utilizando microsserviços e um monorepo."
 date: "2025-09-05"
 repoURL: "https://github.com/ilanzgx/zuno-app"
+tags: ["Next.js", "React", "TypeScript", "Java", "Spring Boot", "Python", "FastAPI", "Docker"]
 ---
 
 O **Zuno** é uma aplicação completa desenhada para centralizar a vida financeira de um investidor. Ele atua como um consolidador de investimentos unificando o portfólio, agregando dados do mercado e entregando uma visão holística do patrimônio.

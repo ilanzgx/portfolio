@@ -2,6 +2,16 @@
 title: "Kroma SaaS - Editor de IA"
 description: "Plataforma proprietária de manipulação e edição de imagens potencializada por inteligência artificial e visão computacional."
 date: "2026-01-05"
+tags:
+  [
+    "Next.js",
+    "TypeScript",
+    "Fastify",
+    "Python",
+    "FastAPI",
+    "PostgreSQL",
+    "Docker",
+  ]
 ---
 
 O **Kroma** é uma plataforma SaaS (Software as a Service) proprietária voltada para manipulação ágil e avançada de imagens via Inteligência Artificial. Para não sobrecarregar fluxos tradicionais da web, sua arquitetura foi segmentada rigorosamente em dois backends distintos capazes de lidar separadamente com as demandas matemáticas e os fluxos de web, otimizando o uso de memória volátil (RAM) provindas dos modelos de IA.

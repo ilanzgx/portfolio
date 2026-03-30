@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
+import { getTagIconPath } from "@lib/icons";
 
 type Props = {
   entry: CollectionEntry<"blog"> | CollectionEntry<"projects">;
@@ -7,16 +8,36 @@ type Props = {
 
 const { entry } = Astro.props;
 const collectionPath = entry.collection === "blog" ? "artigos" : "projetos";
+const tags = entry.collection === "projects" ? (entry.data as CollectionEntry<"projects">["data"]).tags : undefined;
 ---
 
 <a href={`/${collectionPath}/${entry.id}`} class="relative group flex flex-nowrap py-3 px-4 pr-10 rounded-lg border border-black/15 dark:border-white/20 hover:bg-black/5 dark:hover:bg-white/5 hover:text-black dark:hover:text-white transition-colors duration-300 ease-in-out">
-  <div class="flex flex-col flex-1 truncate">
-    <div class="font-semibold">
-      {entry.data.title}
+  <div class="flex flex-col flex-1 gap-2">
+    <div>
+      <div class="font-semibold">
+        {entry.data.title}
+      </div>
+      <div class="text-sm line-clamp-2">
+        {entry.data.description}
+      </div>
     </div>
-    <div class="text-sm">
-      {entry.data.description}
-    </div>
+    {tags && tags.length > 0 && (
+      <ul class="flex flex-wrap gap-1.5">
+        {tags.map((tag) => {
+          const iconPath = getTagIconPath(tag);
+          return (
+            <li class="inline-flex items-center gap-1 text-xs rounded-full px-2 py-0.5 border border-black/10 dark:border-white/15 text-black/50 dark:text-white/60">
+              {iconPath && (
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="size-3 fill-current shrink-0">
+                  <path d={iconPath} />
+                </svg>
+              )}
+              {tag}
+            </li>
+          );
+        })}
+      </ul>
+    )}
   </div>
   <svg
     xmlns="http://www.w3.org/2000/svg"

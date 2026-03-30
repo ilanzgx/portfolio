@@ -3,9 +3,10 @@ title: "SpecScan"
 description: "Uma ferramenta desktop leve e elegante para inspeção e visualização de hardware, com design Glassmorphism."
 date: "2026-03-09"
 repoURL: "https://github.com/ilanzgx/SpecScan"
+tags: ["Tauri", "Rust", "Vue.js", "TypeScript", "Tailwind CSS"]
 ---
 
-O **SpecScan** é um utilitário desktop focado na leitura detalhada das informações físicas da sua máquina, entregando dados profundos acompanhados de uma belíssima tela inspirada na tendência de *Glassmorphism* no Dark Mode.
+O **SpecScan** é um utilitário desktop focado na leitura detalhada das informações físicas da sua máquina, entregando dados profundos acompanhados de uma belíssima tela inspirada na tendência de _Glassmorphism_ no Dark Mode.
 
 ## 🚀 Tecnologias e Stack
 

@@ -3,6 +3,7 @@ title: "Multistream"
 description: "Aplicativo desktop cross-platform para assistir múltiplas transmissões ao vivo simultaneamente (Twitch, YouTube, Kick)."
 date: "2025-12-22"
 repoURL: "https://github.com/ilanzgx/multistream"
+tags: ["Tauri", "Rust", "Vue.js", "TypeScript", "Tailwind CSS"]
 ---
 
 O **Multistream** é um aplicativo desktop _cross-platform_ (funcionando nativamente em Windows, macOS e Linux) que permite aos usuários assistirem a múltiplas streams ao vivo de plataformas diferentes na mesma tela, unificando a experiência de consumo de conteúdo com chat em tempo real.

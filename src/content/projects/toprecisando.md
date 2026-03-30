@@ -3,6 +3,7 @@ title: "Tô Precisando (Mobile)"
 description: "Um aplicativo mobile para conectar clientes e prestadores de serviço, construído com Expo e React Native."
 date: "2025-08-12"
 repoURL: "https://github.com/ilanzgx/toPrecisando-mobile"
+tags: ["React Native", "Expo", "TypeScript", "Supabase"]
 ---
 
 O **Tô Precisando** é um aplicativo mobile criado para conectar pessoas que precisam de um serviço com profissionais que o oferecem. Funciona como um "Uber dos serviços": seja um eletricista, encanador ou professor particular, a plataforma permite a publicação de "vagas" detalhadas e o gerenciamento de candidaturas.
