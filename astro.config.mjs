@@ -5,5 +5,6 @@ import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
   site: "https://ilanzgx.github.io",
+  base: "/portfolio",
   integrations: [mdx(), sitemap(), tailwind()],
 });

@@ -28,10 +28,10 @@ O **Tô Precisando** é um aplicativo mobile criado para conectar pessoas que pr
 ## 📸 Imagens
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 not-prose my-6">
-  <img src="/images/projects/toprecisando/image_1.jpeg" alt="Dashboard principal Zuno" class="w-full h-full object-cover rounded-lg border border-black/10 dark:border-white/10 !m-0" data-zoomable />
-  <img src="/images/projects/toprecisando/image_2.jpeg" alt="Visualização da carteira 1" class="w-full h-full object-cover rounded-lg border border-black/10 dark:border-white/10 !m-0" data-zoomable />
-  <img src="/images/projects/toprecisando/image_3.jpeg" alt="Visualização comparador de carteira 2" class="w-full h-full object-cover rounded-lg border border-black/10 dark:border-white/10 !m-0" data-zoomable />
-  <img src="/images/projects/toprecisando/image_4.jpeg" alt="Visualização comparador de carteira 2" class="w-full h-full object-cover rounded-lg border border-black/10 dark:border-white/10 !m-0" data-zoomable />
+  <img src="/portfolio/images/projects/toprecisando/image_1.jpeg" alt="Dashboard principal Zuno" class="w-full h-full object-cover rounded-lg border border-black/10 dark:border-white/10 !m-0" data-zoomable />
+  <img src="/portfolio/images/projects/toprecisando/image_2.jpeg" alt="Visualização da carteira 1" class="w-full h-full object-cover rounded-lg border border-black/10 dark:border-white/10 !m-0" data-zoomable />
+  <img src="/portfolio/images/projects/toprecisando/image_3.jpeg" alt="Visualização comparador de carteira 2" class="w-full h-full object-cover rounded-lg border border-black/10 dark:border-white/10 !m-0" data-zoomable />
+  <img src="/portfolio/images/projects/toprecisando/image_4.jpeg" alt="Visualização comparador de carteira 2" class="w-full h-full object-cover rounded-lg border border-black/10 dark:border-white/10 !m-0" data-zoomable />
 </div>
 
 ---
