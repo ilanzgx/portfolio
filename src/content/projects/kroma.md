@@ -33,6 +33,15 @@ A arquitetura foi segmentada rigorosamente em dois backends distintos, separando
 
 ---
 
+## 📸 Imagens
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 not-prose my-6">
+  <img src="/images/projects/kroma/image_1.png" alt="Dashboard principal Zuno" class="w-full h-full object-cover rounded-lg border border-black/10 dark:border-white/10 !m-0" data-zoomable />
+  <img src="/images/projects/kroma/image_2.png" alt="Visualização da carteira 1" class="w-full h-full object-cover rounded-lg border border-black/10 dark:border-white/10 !m-0" data-zoomable />
+</div>
+
+---
+
 ## ✨ Funcionalidades
 
 - **Remoção de Fundo (IA):** Modelo `rembg` (U2Net) para recorte exato sem APIs terceiras

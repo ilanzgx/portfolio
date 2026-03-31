@@ -23,6 +23,15 @@ O projeto resolve o problema da fragmentação de transmissões em portais difer
 
 ---
 
+## 📸 Imagens
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 not-prose my-6">
+  <img src="/images/projects/multistream/image_1.png" alt="Dashboard principal Zuno" class="w-full h-full object-cover rounded-lg border border-black/10 dark:border-white/10 !m-0" data-zoomable />
+  <img src="/images/projects/multistream/image_2.png" alt="Visualização da carteira 1" class="w-full h-full object-cover rounded-lg border border-black/10 dark:border-white/10 !m-0" data-zoomable />
+</div>
+
+---
+
 ## ▶️ Como rodar
 
 ```bash
