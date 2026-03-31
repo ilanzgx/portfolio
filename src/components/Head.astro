@@ -8,6 +8,7 @@ import inter400 from "@fontsource/inter/files/inter-latin-400-normal.woff2";
 import inter600 from "@fontsource/inter/files/inter-latin-600-normal.woff2";
 import lora400 from "@fontsource/lora/files/lora-latin-400-normal.woff2";
 import lora600 from "@fontsource/lora/files/lora-latin-600-normal.woff2";
+import "medium-zoom/dist/style.css";
 
 import { ClientRouter } from "astro:transitions";
 import { SITE } from "@consts";
@@ -184,4 +185,22 @@ function toggleTheme(dark) {
   document.addEventListener("DOMContentLoaded", () => init());
   document.addEventListener("astro:after-swap", () => init());
   preloadTheme();
+</script>
+
+<script>
+  import mediumZoom from "medium-zoom";
+
+  const zoom = mediumZoom({
+    margin: 24,
+    background: "rgba(0, 0, 0, 0.85)",
+  });
+
+  document.addEventListener("astro:before-swap", () => {
+    zoom.close();
+  });
+
+  document.addEventListener("astro:page-load", () => {
+    zoom.detach(zoom.getImages());
+    zoom.attach("article img, [data-zoomable]");
+  });
 </script>

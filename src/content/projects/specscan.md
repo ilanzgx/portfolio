@@ -26,7 +26,7 @@ Diferente das interfaces pesadas e antiquadas dos monitores de performance comun
 ## 📸 Imagens
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 not-prose my-6">
-  <img src="/images/projects/specscan/image_1.png" alt="Visualização comparador de carteira 2" class="col-span-1 md:col-span-2 w-full h-auto object-cover rounded-lg border border-black/10 dark:border-white/10 !m-0" data-zoomable />
+  <img src="/images/projects/specscan/image_1.png" alt="Visualização do Specscan" class="col-span-1 md:col-span-2 w-full h-auto object-cover rounded-lg border border-black/10 dark:border-white/10 !m-0" data-zoomable />
 </div>
 
 ---
